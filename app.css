@@ -1,0 +1,74 @@
+body {
+    font-family: 'Zilla Slab', serif;
+    padding-top: 70px;
+    background: #00467F;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5CC82, #00467F);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5CC82, #00467F);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.jumbotron {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.flip {
+    -webkit-perspective: 800;
+    perspective: 800;
+    position: relative;
+    text-align: center;
+    display: table;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.flip .card.flipped {
+    -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+}
+
+.flip .card {
+    width: 300px;
+    height: 188px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
+}
+
+.flip .card .face {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2;
+}
+
+.flip .card .front {
+    padding-top: 10px;
+    position: absolute;
+    width: 300px;
+    z-index: 1;
+}
+
+.flip .card .back {
+    padding-top: 10%;
+    -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+}
+
+.inner {
+    margin: 0px !important;
+}
+
+.github {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+}
