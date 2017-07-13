@@ -1,7 +1,7 @@
  (function($) {
      $(document).ready(function() {
-         $('.flip').hover(function() {
-             $(this).find('.card').toggleClass('flipped');
+         $('.card').hover(function() {
+             $(this).toggleClass('flip');
 
          });
      });
